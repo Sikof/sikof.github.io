@@ -80,8 +80,8 @@
 
 function toggleBackToTopBtn() {
     const backToTopBtn = document.getElementById("backToTopBtn");
-    // Check scroll position and add or remove the class
-    if (window.scrollY > 100) { // Trigger after scrolling 50px
+    
+    if (window.scrollY > 100) { 
         backToTopBtn.classList.add("show");
     } else {
         backToTopBtn.classList.remove("show");
@@ -90,7 +90,7 @@ function toggleBackToTopBtn() {
 
 // Smooth scroll to the top
 document.getElementById("backToTopBtn").addEventListener("click", function(event) {
-    event.preventDefault(); // Prevent default anchor behavior
+    event.preventDefault(); 
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
   </script>
