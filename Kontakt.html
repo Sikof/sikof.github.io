@@ -13,7 +13,7 @@
 
     <!-- Navbar and Background Wrapper -->
     <div class="background-wrapper">
-        <!-- Navbar -->
+        
         <nav class="navbar navbar-expand-lg navbar-dark" id="about-navbar">
             <div class="container">
                 <a class="navbar-brand" href="./index.html">
@@ -88,7 +88,7 @@
 </div>
 
 <script>
-    // Function to observe elements and add animation class
+   
     function animateOnScroll(entries, observer) {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -97,21 +97,21 @@
           } else if (entry.target.classList.contains('map-container')) {
             entry.target.classList.add('animate-slide-in-right');
           }
-          observer.unobserve(entry.target); // Stop observing once animated
+          observer.unobserve(entry.target); 
         }
       });
     }
   
-    // Create an IntersectionObserver instance
+    
     const observer = new IntersectionObserver(animateOnScroll, {
-      threshold: 0.1, // Trigger when 10% of the element is visible
+      threshold: 0.1, 
     });
   
-    // Target the elements to observe
+   
     const contactInfo = document.querySelector('.contact-info');
     const mapContainer = document.querySelector('.map-container');
   
-    // Start observing the elements
+    
     observer.observe(contactInfo);
     observer.observe(mapContainer);
   </script>
