@@ -105,12 +105,12 @@
 
   <!-- About Company Section -->
   <div class="row align-items-center rounded-3 border shadow-lg about-company-section" style="margin-top: 150px;">
-    <!-- Image on the left side for large screens -->
+  
     <div class="col-lg-4 overflow-hidden shadow-lg">
       <img class="img-fluid rounded-lg-3" src="./CSS/pexels-sevenstormphotography-443383.jpg" alt="Нашата Компанија" width="720">
     </div>
 
-    <!-- Text on the right side for large screens -->
+   
     <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 slide-left">
       <h3 class="display-6 fw-bold lh-1 pb-5">За нас</h3>
       <p class="lead">Ние нудиме професионални услуги за ревизија и консултации со фокус на квалитет и доверба. Со повеќе
@@ -158,8 +158,8 @@
 
       cards.forEach(card => observer.observe(card));
       observer.observe(aboutSection);
-      observer.observe(heroContent); // Observe hero section for slide-in
-      buttons.forEach(button => observer.observe(button)); // Apply slide-in to buttons
+      observer.observe(heroContent); 
+      buttons.forEach(button => observer.observe(button)); 
     });
 
     function isInViewport(element) {
@@ -172,17 +172,17 @@
     );
   }
 
-  // Add event listener for scrolling to trigger the animation
+ 
   document.addEventListener('scroll', function() {
     const aboutSection = document.querySelector('.about-company-section');
     
-    // Check if 'За Нас' section is in the viewport
+   
     if (isInViewport(aboutSection)) {
       aboutSection.classList.add('visible');
     }
   });
 
-  // Optionally, you can trigger it on page load for testing
+  
   document.addEventListener('DOMContentLoaded', function() {
     const aboutSection = document.querySelector('.about-company-section');
     aboutSection.classList.add('visible');
@@ -195,7 +195,7 @@
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        observer.unobserve(entry.target); // Stop observing after it's visible
+        observer.unobserve(entry.target); 
       }
     });
   }, { threshold: 0.1 });
