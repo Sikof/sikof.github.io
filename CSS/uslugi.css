@@ -1,4 +1,3 @@
-/* General Styles */
 body, html {
     margin: 0;
     padding: 0;
@@ -33,7 +32,7 @@ body, html {
     z-index: 1;
 }
 
-/* Centered h1 */
+
 .centered-title {
     color: white;
     font-size: 2.5rem;
@@ -43,7 +42,7 @@ body, html {
     position: relative;
 }
 
-/* Breadcrumb Links */
+
 .breadcrumb-links {
     text-align: center;
     font-size: 0.9rem;
@@ -60,7 +59,7 @@ body, html {
     color: #36ab4e;
 }
 
-/* Content Section */
+
 .text-box h2 {
     font-size: 2rem;
     margin-bottom: 10px;
@@ -76,7 +75,7 @@ body, html {
     font-size: 1rem;
 }
 
-/* Underline Style for Grid Section Heading */
+
 .underline-left {
     position: relative;
     font-size: 2rem;
@@ -92,7 +91,7 @@ body, html {
     margin-bottom: 45px;
 }
 
-/* Flex Layout for Content */
+
 .content-wrapper {
     display: flex;
     align-items: flex-start;
@@ -116,7 +115,7 @@ body, html {
     margin-top: 40px;
 }
 
-/* 2x2 Grid Style */
+
 .grid-container {
     display: flex;
     flex-wrap: wrap;
@@ -137,7 +136,7 @@ body, html {
     margin-right: 8px;
 }
 
-/* Responsive Layout */
+
 @media (max-width: 768px) {
     .content-wrapper {
         flex-direction: column;
@@ -151,7 +150,6 @@ body, html {
     }
 }
 
-/* Footer Styles */
 .footer {
     position: relative;
     margin-top: 100px;
@@ -169,7 +167,7 @@ body, html {
     z-index: 1;
 }
 
-/* Slide-In Animation */
+
 @keyframes slideInFromLeft {
     0% {
         opacity: 0;
