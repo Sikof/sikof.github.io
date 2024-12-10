@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TinDog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/uslugi.css">
+</head>
+
+<body class="non-main-page">
+
+  <!-- Navbar and Background Wrapper -->
+  <div class="background-wrapper">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="about-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./CSS/Logo.svg" width="30" height="30" alt="">
+          Ревизија Костески
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="./index.html">Дома</a>
+            <a class="nav-link active" aria-current="page" href="./Услуги.html">За Нас</a>
+            <a class="nav-link" href="./Trans.html">Транспарентност</a>
+            <a class="nav-link" href="./Kontakt.html">Контакт</a>
+          </div>
+        </div>
+      </div>
+    </nav>  
+
+    <!-- Background title and links below it -->
+    <!-- <div class="background-wrapper"> -->
+      <h1 class="centered-title">За Нас</h1>
+      <div class="breadcrumb-links">
+        <a href="./index.html">Дома</a>
+        <span class="separator">/</span>
+        <a href="./Услуги.html">За Нас</a>
+      </div>
+    </div>
+
+
+    <div class="container py-5">
+      <div class="content-wrapper d-flex align-items-start">
+        <!-- Left Column: Text and Grid -->
+        <div class="left-column">
+          <div class="text-box">
+            <h2 class="underline-left">Зошто Нас</h2>
+            <p class="lead">Нашата канцеларија со високо ниво на стручност, професионално ги задоволува потребите за ревизорски услуги и даночно советување, побарани од страна на домашните и странски клиенти.</p>
+          </div>
+          <div class="grid-container">
+            <div class="grid-item">
+              <img src="./CSS/checkmark-circle-svgrepo-com.png" alt="Icon">
+              <span>Стручност</span>
+            </div>
+            <div class="grid-item">
+              <img src="./CSS/checkmark-circle-svgrepo-com.png" alt="Icon">
+              <span>Професионалност</span>
+            </div>
+            <div class="grid-item">
+              <img src="./CSS/checkmark-circle-svgrepo-com.png" alt="Icon">
+              <span>Интегритет</span>
+            </div>
+            <div class="grid-item">
+              <img src="./CSS/checkmark-circle-svgrepo-com.png" alt="Icon">
+              <span>Доверливост</span>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Right Column: Image -->
+        <div class="right-column">
+          <img src="./CSS/businessman-8598067_1280.jpg" alt="Professional Businessman" class="custom-img">
+        </div>
+      </div>
+    </div>
+    
+  
+  
+    <div class="container">
+    <footer class="footer py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Дома</a></li>
+            <li class="nav-item"><a href="./Услуги.html" class="nav-link px-2 text-body-secondary">За Нас</a></li>
+            <li class="nav-item"><a href="./Kontakt.html" class="nav-link px-2 text-body-secondary">Контакт</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2024 Ревизија Костески</p>
+    </footer>
+</div>
+    
+      
+    <script> 
+document.addEventListener("DOMContentLoaded", function () {
+    const elementsToAnimate = document.querySelectorAll(".text-box h2, .text-box p, .grid-item, .custom-img");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("in-view");
+            }
+        });
+    });
+
+    elementsToAnimate.forEach(element => observer.observe(element));
+});
+
+</script> 
+
+</body>
+
+
+
+
